@@ -140,7 +140,7 @@ var prefix = "#";
     })
 
 client.on("guildMemberAdd", function(member) {
-    const wc = member.guild.channels.find("name", "Deluxe")
+    const wc = member.guild.channels.find("name", "deluxe")
         const embed = new Discord.RichEmbed()
         .setColor('B90C0C')
         .setAuthor(member.user.tag, member.user.avatarURL)
@@ -148,7 +148,7 @@ client.on("guildMemberAdd", function(member) {
 .setThumbnail(member.avatarURL)
   .setImage('https://pa1.narvii.com/6782/6a39e35882b236f29965c9070bad5ce51f1dd01f_hq.gif')
         .setTimestamp()
-        return wc.sendEmbed(embed);
+        return wc.send(embed);
         
 });
 
@@ -164,7 +164,7 @@ client.on('guildMemberAdd', member => {
     .setColor('GREEN')
     .setFooter('Dark System.', 'https://cdn.discordapp.com/attachments/479077727002034176/489159001372885003/22cc8b50393fb6eea6d85e6139136e78.jpeg')
 
-var channel =member.guild.channels.find('name', 'deluxe')
+var channel =member.guild.channels.find('name', '.Dx Members')
 if (!channel) return;
 channel.send({embed : embed});
 });
