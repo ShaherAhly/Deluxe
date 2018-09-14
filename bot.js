@@ -141,7 +141,7 @@ var prefix = "#";
     })
 
 client.on("guildMemberAdd", function(member) {
-    const wc = member.guild.channels.find("name", ".Dx Members")
+    const wc = member.guild.channels.find("name", "Deluxe")
         const embed = new Discord.RichEmbed()
         .setColor('B90C0C')
         .setAuthor(member.user.tag, member.user.avatarURL)
@@ -171,7 +171,7 @@ channel.send({embed : embed});
 });
 
 client.on('guildMemberAdd', (member) => {
-member.addRole(member.guild.roles.find('name', '.Dx Members'));
+member.addRole(member.guild.roles.find('name', 'Deluxe'));
 });
 
 
