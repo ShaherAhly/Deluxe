@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '.') {
-        message.channel.send('**Welcome To Dark Server :cocktail:**')
+        message.channel.send('**Welcome To Deluxe Server :cocktail:**')
       }
 });
 
@@ -140,11 +140,11 @@ var prefix = "#";
     })
 
 client.on("guildMemberAdd", function(member) {
-    const wc = member.guild.channels.find("name", "dark")
+    const wc = member.guild.channels.find("name", "Deluxe")
         const embed = new Discord.RichEmbed()
         .setColor('B90C0C')
         .setAuthor(member.user.tag, member.user.avatarURL)
- .setDescription('***Welcome To Dark. ***')
+ .setDescription('***Welcome To Deluxe. ***')
 .setThumbnail(member.avatarURL)
   .setImage('https://pa1.narvii.com/6782/6a39e35882b236f29965c9070bad5ce51f1dd01f_hq.gif')
         .setTimestamp()
@@ -164,13 +164,13 @@ client.on('guildMemberAdd', member => {
     .setColor('GREEN')
     .setFooter('Dark System.', 'https://cdn.discordapp.com/attachments/479077727002034176/489159001372885003/22cc8b50393fb6eea6d85e6139136e78.jpeg')
 
-var channel =member.guild.channels.find('name', 'dark')
+var channel =member.guild.channels.find('name', 'deluxe')
 if (!channel) return;
 channel.send({embed : embed});
 });
 
 client.on('guildMemberAdd', (member) => {
-member.addRole(member.guild.roles.find('name', '- Dark. 🖤'));
+member.addRole(member.guild.roles.find('name', '.Dx Members'));
 });
 
 
