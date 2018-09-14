@@ -5,9 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+
 client.on('message', message => {
     if (message.content === '.') {
-        message.channel.send('**Welcome To Deluxe Server :cocktail:**')
+        message.channel.send('**Welcome To Dark Server :cocktail:**')
       }
 });
 
@@ -162,9 +163,9 @@ client.on('guildMemberAdd', member => {
     .setDescription(`اهلا بك في السيرفر`)
     .addField(' :bust_in_silhouette:  انت رقم',`**[ ${member.guild.memberCount} ]**`,true)
     .setColor('GREEN')
-    .setFooter('Dark System.', 'https://cdn.discordapp.com/attachments/479077727002034176/489159001372885003/22cc8b50393fb6eea6d85e6139136e78.jpeg')
+    .setFooter('Deluxe System.', 'https://cdn.discordapp.com/attachments/479077727002034176/489159001372885003/22cc8b50393fb6eea6d85e6139136e78.jpeg')
 
-var channel =member.guild.channels.find('name', '.Dx Members')
+var channel =member.guild.channels.find('name', 'deluxe')
 if (!channel) return;
 channel.send({embed : embed});
 });
@@ -172,6 +173,8 @@ channel.send({embed : embed});
 client.on('guildMemberAdd', (member) => {
 member.addRole(member.guild.roles.find('name', '.Dx Members'));
 });
+
+
 
 
 
